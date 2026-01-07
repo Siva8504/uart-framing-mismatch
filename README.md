@@ -8,6 +8,8 @@ but the remaining characters appear as garbage.
 This usually happens when:
 - Data bits mismatch (7 vs 8)
 - Stop bits mismatch (1 vs 2)
+- Baud rate mismatch
+- Parity mismatch (If we select ODD and if the data has even number of one's data is not displayed because of parity mismatch)
 
 ## Why First Character Looks Correct
 UART resynchronizes using the START bit.
