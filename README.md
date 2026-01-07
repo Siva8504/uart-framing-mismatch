@@ -16,10 +16,10 @@ but framing mismatch causes misalignment for following characters.
 
 ## Key Lesson
 UART transmitter and receiver must match exactly in:
-- Baud rate
-- Data bits
-- Parity
-- Stop bits
+- Baud rate ->If baudrate is mismatched we get total garbage value...Timing or sampling error
+- Data bits ->If databits are mismatched first charcter will be correct,after that everything is garbage
+- Parity    ->when parity doesn't match no data will be displayed on the terminal...Parity Error
+- Stop bits ->when stopbit is mismatced commonly we get @ or we get garbage ,sometimes we get firstcharacter correct then garbage data...This gives Framing error/
 
 
 #CODE
